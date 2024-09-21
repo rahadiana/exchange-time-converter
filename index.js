@@ -2,7 +2,7 @@ const { GeTime } = require("./TimeFormatter");
 
 
 function convertTime(val) {
-    const PArseTime = GeTime(val)
+    const PArseTime = GeTime(parseInt(val))
     const GetJam = PArseTime.HH;
     const GetMenit = PArseTime.MM;
     const Get10Detik = PArseTime.SS.substring(0, 1);
